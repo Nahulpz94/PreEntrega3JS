@@ -1,0 +1,165 @@
+/*estilo promociones*/
+
+.body-promos {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "main"
+    "h2"
+    "section"
+    "footer";
+    background-image: url(../imgs/promos/fondo-promos.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contenedor-h1-promos{
+        grid-area: h1;
+        width: 90%;
+        padding: 42px;
+        margin: 0 auto;
+        color:map-get($colores , terciario);
+        background-color:map-get($colores , secundario);
+        @include animate(fadeInUp, 1s, 1);
+        .promo-h1 { /*promociones*/
+            @include flex(flex,center,center);
+            margin-bottom: 0;
+            font-size: 60px;
+            @include animate(bounceIn, 3s, infinite);
+            span {
+                color:map-get($colores, detalles-naranja)
+            }
+        }
+}
+    .promo-section-container{
+        grid-area: main;
+        .promo-section-top {/*seccion superior*/
+            @include flex(flex, space-evenly, center);
+            padding: 1rem 2rem 0;
+            margin: 0 auto;
+            @include medidas (90%, 750px);
+            background-color: map-get($colores, detalles-naranja);
+            .promo-img {
+                @include medidas (100%,700px);
+                margin: 10px;
+                @include shadow (5px, 5px);
+                transition: 1.03s ease;
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+        .promo-section-bottom { /*seccion*/
+            @include medidas (90%, 750px);
+            @include flex(flex, space-evenly, center);
+            padding: 0 2rem 2rem;
+            margin: 0 auto;
+            background-color: map-get($colores, detalles-naranja);
+            .promo-img {
+                @include medidas (100%,700px);
+                margin: 10px;
+                @include shadow (5px, 5px);
+                transition: 1.03s ease;
+                &:hover {
+                    transform: scale(1.02);
+                }
+            }
+        }
+    }
+    .contenedor-h2-mediospago{/*estilo medios de pago*/
+        grid-area: h2;
+        width: 90%;
+        margin: 0 auto;
+        padding: 40px;
+        background-color: map-get($colores , secundario);
+    .medio-pago { 
+        color: map-get($colores , terciario);
+        font-size: 50px;
+        text-align: center;
+        @include animate(bounceIn, 3s, infinite);
+        span {
+            color: map-get($colores, detalles-naranja);
+        }
+    }
+}
+    .section-mediopagos{ /*medios de pago*/
+        grid-area: section;
+        @include flex(flex, space-around,center);
+        @include medidas (90%, 320px);
+        margin: 0 auto;
+        background-image:url(../imgs/promos/fondo-pagos.webp);
+        .caja-efectivo { /*efectivo*/
+            @include medidas (300px, 240px);
+            @include flex(flex, center, center);
+            flex-direction: column;
+            @include shadow (5px, 5px);
+            border: 1px solid map-get($colores , secundario);
+            transition: 0.4s ease;
+            .h3-medios-de-pago { /*texto efectivo*/
+                display: flex;
+                padding: 5px 5px;
+                font-size: 24px;
+                align-self: center;
+                color: map-get($colores , terciario);
+                background-color:map-get($colores, detalles-naranja);
+                @include shadow (5px, 5px);
+            }
+            .efectivo { /*imagen efectivo*/
+                @include medidas (150px, 150px);
+                margin: 0 25% 0 25%;
+            } 
+            &:hover{ /*hover*/
+                transform: scale(1.09);
+            }
+        }
+        .tarjetas { /*tarjetas*/
+            @include medidas(350px, 240px);
+            @include flex(flex, center, center);
+            flex-direction: column;
+            border: 1px solid map-get($colores , secundario);
+            @include shadow (5px, 5px);
+            transition: 0.4s ease;
+            .h3-medios-de-pago { /*texto*/
+                display: flex;
+                padding: 5px 5px;
+                font-size: 24px;
+                align-self: center;
+                color: map-get($colores , terciario);
+                background-color:map-get($colores, detalles-naranja);
+                @include shadow (5px, 5px);
+            }
+            .tarjeta { /*imagen tarjeta*/
+                display: flex;
+                @include medidas (320px, 150px);
+                
+            }
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+        .mercado-pago { /*mercado pago*/
+            @include medidas (300px, 240px);
+            @include flex(flex, center, center);
+            flex-direction: column;
+            @include shadow (5px, 5px);
+            border: 1px solid black;
+            transition: 0.4s ease;
+            .h3-medios-de-pago { /*texto mercado*/
+                display: flex;
+                padding: 5px 5px;
+                font-size: 24px;
+                align-self: center;
+                color: map-get($colores , terciario);
+                background-color:map-get($colores, detalles-naranja);
+                @include shadow (5px, 5px);
+            } 
+            .mercado-pago-img { /*imagen mercado*/
+                display: flex;
+                @include medidas (150px, 150px);
+            }
+            &:hover{
+                transform: scale(1.09);
+            }
+        }
+    }
+}
+

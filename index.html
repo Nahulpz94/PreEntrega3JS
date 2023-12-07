@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" id="html">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Volvió la Pizzería La Jirafa, vení a probar las mejores pizzas!">
+    <meta name="keywords" content="Pizzeria, Jirafa, Quilmes, Novedades, Promociones">
+    <title>Pizzeria La Jirafa - Inicio</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- animated css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--Estilos--> 
+    <link rel="stylesheet" type="text/css" href="./css/estilos.css">
+    <!--Iconos--> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="body-index" id="body-index"> 
+    <div class="contenedor-iniciar-sesion" id="boton-iniciar-sesion">
+        <a href="./pages/login.html" target="_blank" class="boton-iniciar-sesion">Iniciar Sesión</a>
+    </div>   
+
+    <!--inicio header-->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark "> <!--nav-->
+            <div class="container">
+                <a class="navbar-brand" href="./index.html"><img src="./imgs/logo-3.webp" id="logo"alt="Logo Jirafa" width="200" height="110" aria-label="Ir al index"></a>
+                <button class="navbar-toggler border-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Jirafa Menú</h5>
+                        <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body flex-lg-row">
+                        <ul class="navbar-nav justify-content-start align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" id="active" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./pages/menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./pages/nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./pages/promos.html">Promos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link " href="./pages/contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="gap-1" id="logo-redes">
+                        <a href="https://www.instagram.com/lajirafadequilmes" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=541172231010&text=%C2%A1Hola%21+Quiero+pizza+de+La+Jirafa&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp" ></i></a>
+                        <a href="https://www.facebook.com/La-Jirafa-de-Quilmes-107216815347671" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/LaJirafaQuilmes" target="_blank"><i class="fa-brands fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </nav><!-- cierre nav-->
+    </header>
+        <!-- cierre header-->
+        <!-- seccion izquierda -->
+    <main class="main-index" id="main-index">
+        <div class="main-overlay">
+            <div class="contenedor-volvimos" id="contenedor-volvimos">   
+                <h1 animate__animated animate__bounceInRight id="volvimos" class="volvimos"><span class="volvimos-span">¡</span>VOLVIMOS<span class="volvimos-span">!</span></h1>
+                <h3 animate__animated animate__bounceInLeft class="volvimos-h3"> Date una vuelta y venite a conocer 
+                <br> La Jirafa renovada.
+                <br>¡Te esperamos con las increíbles pizzas de siempre!
+                </h3>
+            </div>
+            <div animate__animated animate__zoomInUp class="contenedor-botones-index" id="contenedor-botones-index"> 
+                <a href="./pages/contacto.html" class="boton" target="_blank" aria-label="Reservas">Reservas</a>
+                <a href="https://api.whatsapp.com/send/?phone=541172231010&text=%C2%A1Hola%21+Quiero+pizza+de+La+Jirafa&type=phone_number&app_absent=0" class="boton" target="_blank" aria-label="Pedidos" >Pedidos</a>
+            </div>
+        </div>                
+    </main>
+    <!--seccion derecha-->
+    <section id="index-section-bottom" class="index-section-bottom">
+            <h3 animate__animated animate__heartBeat class="novedad" id="novedad">NOVEDADES</h3>
+            <div class="contenedor-videos-index" id="contenedor-videos-index">
+                <img class="pizzaparty" id="pizzaparty" src="./imgs/main/pizza-party.webp" width="500" height="600" alt="nueva pizza party de la jirafa">
+                <img class="logo-novedad" id="logo-novedad" src="./imgs/main/logo-novedad.webp" alt="jirafa">
+                <iframe  class="video-index" id="video-index"  src="https://youtube.com/embed/xosDDM2C8mQ?feature=share" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+    </section>
+        <!--footer-->
+    <footer class="footer" id="footer">
+        <div class="scroll-up-container">
+            <a href="#" class="scroll-up" aria-label="Ir arriba"><img class="img-scroll-up" src="./imgs/scroll-up.png" alt="ir arriba"/></a>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"> <!--info contacto-->
+                    <div class="footer-info" id="footer-info">
+                        <i class="fa-sharp fa-solid fa-phone fa-2x1" id="footer-phone"></i>
+                        <h3>4782-1218</h3>
+                        <i class="fa-solid fa-envelope" id="footer-envelope"></i>
+                        <a href="mailto:pizzerialajirafa@gmail.com" aria-label="Envianos un correo"><h3>Correo</h3></a>
+                    </div>
+                </div>
+                <div class="col-md-4"> <!--footer hora-->
+                    <div class="footer-hora" id="footer-hora">
+                        <h3>Horarios</h3>
+                        <p>Martes a Domingos de 11:00hs a 00:00hs
+                        <br>Lunes Cerrado</p>
+                    </div>
+                </div>
+                <div class="col-md-4"> <!--footer ubicacion-->
+                    <div class="footer-ubicacion" id="footer-ubicacion">
+                        <h3>Ubicación</h3>
+                        <p>9 de Julio 410
+                        <br>Quilmes - Bs. As</p>
+                    </div>
+                </div>
+                <div class="col-md-12"> <!--footer redes-->
+                    <div class="footer-redes" id="footer-redes">
+                        <a href="https://www.instagram.com/lajirafadequilmes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=541172231010&text=%C2%A1Hola%21+Quiero+pizza+de+La+Jirafa&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/La-Jirafa-de-Quilmes-107216815347671" target="_blank"><i class="fa-brands fa-facebook"></i></a>   
+                        <a href="https://twitter.com/LaJirafaQuilmes" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright"> Copyright &#169; 2023 Nahuel F. López</p>  
+    </footer>
+    <script src="./js/index.js"></script>
+</body>
+</html>

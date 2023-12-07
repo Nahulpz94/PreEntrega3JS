@@ -1,0 +1,143 @@
+
+.body-index {/*fondo index*/
+    width: $full-width;
+    min-height: 100vh;
+    background-image: url(../imgs/main/fondo-indexx.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    display: grid;
+    grid-template-areas:
+    "header"
+    "main"
+    "section"
+    "footer";
+    .contenedor-iniciar-sesion {
+        background-color: map-get($colores, salmon-claro);
+        display: flex;
+        justify-content: center;
+        a{  
+            color: map-get($colores, detalles-violeta);
+            font-size: 20px;
+            text-decoration: none;
+        }
+    }
+    .main-index {/*seccion principal*/
+        @include medidas (90%, 600px);
+        grid-area: main;
+        margin: 0 auto;
+        display: flex;  
+        flex-wrap: wrap;
+        background-image: url(../imgs/main/fondo-volvimoss.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: map-get($colores , salmon-claro) ;
+        .main-overlay {/*overlay main*/
+            margin: 0 auto;
+            @include medidas (100%, 600px);
+            background-color: rgba(map-get($colores , secundario), 0.9);
+        }
+        .contenedor-volvimos{
+            position: relative;
+            margin: 50px auto 0;
+            padding: 0px;
+            @include medidas (100%, 370px);
+            @include flex(flex, space-around, center);
+            flex-direction: column;
+            h3 {/*parrafo*/
+                position: relative;
+                @include font-roboto(600, false, 2.5rem, 1.5);
+                text-align: center;
+                letter-spacing: 8px;
+                @include animate(bounceInLeft, 2s, 1);
+            }
+            .volvimos {/* h1 main*/
+                margin-top: 10px;
+                @include medidas (100%, 100px);
+                @include flex(flex, center, center);
+                @include font-roboto(700, false, 7rem, 3.5);
+                letter-spacing: 15px;
+                color: map-get($colores , terciario);
+                @include animate(bounceInRight, 2s, 1);
+                span {
+                    color:map-get($colores, detalles-naranja);
+                }
+            }
+        }
+        .contenedor-botones-index {/* botones main*/
+            @include flex(flex, center, center);
+            @include medidas (100%, 40px);
+            @include animate(zoomInUp, 2s, 1);
+            margin-top: 2rem;
+            a { 
+                @include flex(flex, center, center);
+                color: map-get($colores , terciario);
+                @include font-roboto(700, false, 24px, 1.1);
+                background-color: map-get($colores, detalles-naranja);
+                text-decoration: none;
+                }
+                .boton {
+                    margin: 20px;
+                    @include medidas (180px, unset);
+                    letter-spacing: 2px;
+                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+                    @include shadow (5px, 2px, salmon-claro);          
+                    transition: 0.5s ease;
+                    &:hover {
+                    @include shadow (5px, 4px, salmon-oscuro);
+                    color: map-get($colores, salmon-claro);  
+                    background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
+                    transform:scale(1.1);
+                }
+            }
+        }
+    }
+    .index-section-bottom {/* seccion novedades */
+        grid-area: section;
+        margin: 0 auto;
+        padding-bottom: 3rem;
+        @include medidas (90%, unset);
+        @include flex(flex, center, center);
+        flex-direction: column;
+        background-color:map-get($colores , primario);
+        /*novedades h3*/
+        h3 {
+            margin-bottom: 30px;
+            margin-top: 10px;
+            @include flex(flex, center, center);
+            font-size: 40px;
+            color: map-get($colores , terciario);
+            transition: 0.9s ease-in-out;
+        }
+        .novedad {
+            @include medidas (100%, 50px);
+            letter-spacing: 2px;
+        }
+        .contenedor-videos-index {
+            @include medidas (100%, 620px);
+            @include flex(flex, space-around,center);
+            .pizzaparty {/*foto pizza party */
+                @include medidas (500px, 600px);
+                @include shadow (5px, 10px);
+                border: #000000 1px solid;
+                transition: 0.9s ease-in-out;
+                &:hover {
+                    transform: scale(1.05);
+                }
+            }
+            .video-index {/* video novedades */
+                padding: 15px; 
+                @include medidas (500px, 600px);
+                @include shadow (2px, 5px);
+                border: #000000 1px solid;
+                transition: 0.9s ease-in-out;
+                &:hover{
+                    transform: scale(1.05);
+                }
+            }
+            .logo-novedad { /*foto novedades */
+            display: flex;
+            @include medidas (450px, 600px);
+            }
+        }
+    }
+}

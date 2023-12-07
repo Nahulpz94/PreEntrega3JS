@@ -1,0 +1,168 @@
+
+/*estilo contacto*/
+
+.body-contacto {
+    display:  grid;
+    grid-template-areas: 
+    "header"
+    "h1"
+    "banner"
+    "main"
+    "footer"
+    ;
+    background-image: url(../imgs/contacto/fondo-contacto.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contenedor-h1-contacto{
+        grid-area: h1;
+        @include medidas (90%, unset);
+        margin: 0 auto;
+        padding: 40px;
+        color:map-get($colores , terciario);
+        background-color:map-get($colores , secundario);
+        @include animate(fadeInUp, 1s, 1);
+    .contacto-h1 { /*texto contacto*/
+        margin: 0 auto;
+        @include flex(flex, center, center);
+        font-size: 60px;
+        @include animate(bounceIn, 3s, infinite);
+        span {
+            color: map-get($colores , detalles-naranja);
+            } 
+        } 
+    }
+    .contenedor-banner { /*banner contacto*/
+        grid-area: banner;
+        @include medidas (90%, unset);
+        margin: 1px auto 1px;
+        .banner-contacto {
+            width: $full-width;
+            @include shadow (5px, 5px);
+        }
+    }
+    .main-contacto {/*main contacto*/
+        grid-area: main;
+        @include medidas (90%, auto);
+        padding: 20px;
+        margin: 0 auto 3px;
+        @include flex(flex, space-evenly,center);
+        background-image: url(../imgs/contacto/fondo-formulario.webp);
+        background-repeat: no-repeat;
+        background-size: cover;
+        @include shadow (5px, 2px);
+        .form-contacto{    /*formulario de contacto*/
+            padding: 14px;
+            font-size: 20px;
+            @include medidas (100%, 100%);
+            text-align: center;
+            @include shadow (5px, 2px);
+            border: 1px solid map-get($colores, secundario );
+                .campo {     /*campo*/
+                    @include medidas (90%, auto);
+                    margin: 10px 0;
+                    padding: 10px;
+                    @include tipografia(unset, 'Poppins', bolder);
+                    text-align: center;
+                    color: map-get($colores , terciario);
+                    @include shadow (5px, 2px);
+                    background-color: map-get($colores , secundario);
+                    border: 1px solid map-get($colores , secundario);
+                    transition: 0.4s ease;
+                    &::placeholder {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        color: map-get($colores , terciario );
+                        }
+                    &:hover {
+                    color: map-get($colores , terciario);
+                    transform: scale(1.05);
+                    }
+                    &:focus{
+                    outline: none;
+                    text-align: center;
+                    @include shadow (5px, 4px, secundario);
+                    transition: 1s ease;
+                    color: map-get($colores , terciario);
+                        &::placeholder {
+                            font-size: 16px;
+                            text-align: center;
+                            letter-spacing: 1px;
+                            color: transparent;
+                            transition: 0.1s ease;
+                            }
+                        }
+                    }
+            .caja-mensaje { /*mensaje*/
+                @include medidas(90%, 180px);
+                @include tipografia(16px, unset, bolder);
+                margin: 10px 0;
+                line-height: 20px;
+                text-align: center;
+                color: map-get($colores , terciario);
+                @include shadow (5px, 2px);
+                border: 1px solid map-get($colores , secundario);
+                background-color: map-get($colores , secundario);
+                resize: none;
+                transition: 0.4s ease;
+                &:hover {   
+                    transform: scale(1.05);
+                }
+                &:focus{    
+                    outline: none;
+                    text-align: center;
+                    @include shadow (5px, 2px);
+                    color: map-get($colores , terciario);
+                    transition: 1s ease;
+                    &::placeholder {
+                        font-size: 16px;
+                        letter-spacing: 1px;
+                        text-align: center;
+                        color: transparent;
+                        transition: 0.1s ease;
+                    }
+                }
+                &::placeholder {
+                    font-size: 16px;
+                    letter-spacing: 1px;
+                    text-align: center;
+                    color: map-get($colores , terciario);
+                }
+            }
+            .contenedor-boton-contacto{
+                    @include medidas (100%, 60px);
+                    @include flex(flex, center, center);
+                .boton-contacto {
+                    @include medidas (40%, unset);
+                    font-weight: bolder;
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                    border: 1px solid map-get($colores, detalles-naranja );
+                    @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+                    transition: 0.6s ease;
+                    @include shadow (1px, 2px, salmon-oscuro);
+                    &:hover {
+                        @include shadow (5px, 4px, salmon-oscuro);
+                        color: map-get($colores , salmon-claro) ;
+                        background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
+                        transform: scale(1.1);
+                    }
+                }
+            }
+        }
+        .contenedor-mapa {
+            padding: 18px;
+            margin-left: 1rem;
+            @include flex(flex,center, center);
+            @include medidas (100%, 100%);
+            @include shadow(5px, 2px);
+            border: 1px solid map-get($colores, secundario);
+            .mapa {
+                width: 90%;
+                @include shadow(5px, 5px);
+            }
+        }
+    }
+}
+
+

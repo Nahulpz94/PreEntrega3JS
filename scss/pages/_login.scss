@@ -1,0 +1,77 @@
+body {
+    background-image: linear-gradient(to bottom, #ae2a3f, #be303f, #ce383e, #dd403c, #ec4939, #f35c3f, #f96d45, #ff7d4d, #ff9563, #ffab7c, #ffbf98, #ffd3b5);
+    background-repeat: no-repeat;
+    background-size:cover;
+    .contenedor-login {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100vh;
+        .logo-inicio-sesion {
+            margin-bottom: 10px;
+            height: 120px;
+        }
+        h1{
+            margin-top: 2rem;
+            font-size: 4em;
+            color: map-get($colores , terciario);
+        }
+        input {
+            margin: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1.5px solid map-get($colores , secundario );
+            padding: 14px;
+            font-size: 20px;
+            text-align: center;
+            @include tipografia(unset, 'Poppins', bolder);
+            &::placeholder {
+                font-size: 16px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+            &:focus{
+                outline: none;
+                text-align: center;
+                @include shadow (5px, 4px, secundario);
+                transition: 1s ease;
+                color: map-get($colores , terciario);
+                &::placeholder {
+                    font-size: 16px;
+                    text-align: center;
+                    letter-spacing: 1px;
+                    color: transparent;
+                    transition: 0.1s ease;
+                }
+                &:hover {
+                    color: map-get($colores , terciario);
+                    transform: scale(1.05);
+                }
+            }    
+        }
+        .contenedor-boton-login{
+            @include flex(flex, center, center);
+            @include medidas (100%, 40px);
+            @include animate(zoomInUp, 1s, 1);
+            margin: 1rem 0 1rem 0;
+            .boton-log-in {
+                margin: 20px;
+                @include medidas (170px, 40px);
+                @include tipografia(unset, 'Poppins', bolder);
+                letter-spacing: 2px;
+                text-align: center;
+                @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+                @include shadow (5px, 1.5px, secundario);          
+                transition: 0.5s ease;
+                &:hover {
+                @include shadow (5px, 4px, salmon-oscuro);
+                color: map-get($colores, terciario);  
+                background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
+                transform:scale(1.1);
+                }  
+            }
+        }
+        
+    }
+}

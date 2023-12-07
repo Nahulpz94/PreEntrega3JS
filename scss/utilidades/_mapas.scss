@@ -1,0 +1,29 @@
+/*MAPAS*/
+$colores:(
+    primario: #AE2A3F,
+    secundario: #1C3334,
+    terciario: #F5F5F5,
+    salmon-oscuro: #F8B195,
+    salmon-claro: #FFD3B5,
+    detalles-violeta: #783E75,
+    detalles-naranja:#FF5733,
+    sombras: #611111
+);
+
+$animaciones:(
+    desvanecer:(
+        nombre: fade,
+        duración: 0.5s,
+        efecto: ease-in-out    
+        ),
+    mover:(
+        nombre: move,
+        duracion: 1s,
+        efecto: ease-in-out
+    ),
+    escalar:(
+        nombre: scale,
+        duracion: 0.8s,
+        efecto: ease-in-out
+    )
+);

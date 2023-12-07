@@ -1,0 +1,136 @@
+
+.body-menu {/*estilos menu*/
+    display: grid;
+    grid-template-areas:
+    "header"
+    "h1"
+    "main"
+    "section"
+    "div"
+    "footer";
+    width: $full-width;
+    background-image: url(../imgs/menu/fondo-menu-3.webp); /*fondo*/
+    background-repeat: no-repeat;
+    background-size: cover; 
+    height: 100%;
+    .contenedor-h1-menu{
+        grid-area: h1;
+        width: 90%;
+        margin: 0 auto;
+        padding: 42px;
+        background-color: map-get($colores , secundario);
+        @include animate(fadeInUp, 1s, 1);
+        .nuestro-menu {/*h1 menu*/
+            width: 100%;
+            margin: 0;
+            @include font-roboto(700, false, 60px, 1);
+            text-align: center;
+            color: map-get($colores, detalles-naranja);
+            @include animate(bounceIn, 3s, infinite);
+            /*h1 span*/
+            .nuestro {
+                color:map-get($colores , terciario);
+            }
+        }
+    }
+    .menu-section-top {/*seccion superior*/
+        grid-area: main;
+        @include flex(flex, space-around, center);
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        background-color: map-get($colores , primario);
+        .img-menu{ 
+            width: 32%;
+            @include shadow (5px, 5px);
+        }
+    }
+    .card-container-grid {
+        grid-area: section;
+        @include medidas(90%, unset);
+        margin: 20px auto;
+        padding: 1rem 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 3fr;
+        grid-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        z-index: 99;
+        .card-container {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            margin: 1.2rem;
+            @include medidas(100%, 270px);
+            perspective: 1000px;
+        .card-1 {
+            position: absolute;
+            @include medidas(100%, 100%);
+            transform-style: preserve-3d;
+            transition: 1s ease;
+            &:hover {
+                transform: rotateY(180deg);
+            }
+            .card-front {
+                position: absolute;
+                padding: 10px 15px 0 15px;
+                cursor: pointer;
+                @include medidas(100%, 100%);
+                @include flex(flex, space-around, center);
+                flex-direction: column;
+                border: 1px solid rgb(56, 54, 54);
+                @include shadow(5px, 5px);
+                background-color: map-get($colores, detalles-naranja);
+                backface-visibility: hidden;
+                img {
+                    border: 1px solid map-get($colores, secundario);
+                    @include shadow(5px, 5px);
+                    @include medidas (94%, 12rem);
+                    margin-top: 0.6rem;
+                    }
+                }
+            .card-body {
+                @include flex(flex, space-around, center);
+                p{
+                @include font-roboto(700, false, 22px, 1);
+                letter-spacing: 2px;
+                text-align: center;
+                color: map-get($colores, terciario);
+                }
+            }
+        }
+        .card-back {
+            position: absolute;
+            padding: 10px 15px 0 15px;
+            @include medidas(100%, 100%);
+            @include flex(flex, center, center);
+            @include font-roboto(700, false, 1.4rem, 1.6);
+            flex-flow: column wrap;
+            text-align: center;
+            background-color: map-get($colores, secundario);
+            color: map-get($colores, terciario);
+            border: 1px solid rgb(56, 54, 54);
+            @include shadow(5px, 5px);
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+                p{
+                    padding: 0
+                }
+            }
+        }
+    }
+    .menu-section-bottom {/*seccion baja*/
+        grid-area: div;
+        width: 90%;
+        margin: 0 auto;
+        padding: 2rem 1rem;
+        @include flex(flex, space-around, center);
+        background-color: map-get($colores , primario);
+        .menu-img{
+            width: 32%;
+            @include shadow (5px, 5px);
+        }
+    }
+}
+

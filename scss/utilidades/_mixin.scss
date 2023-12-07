@@ -1,0 +1,79 @@
+/*MIXINS*/
+
+/*display-flex*/
+@mixin flex($display, $horizontal, $vertical){
+    display: $display;
+    justify-content: $horizontal;
+    align-items: $vertical;
+}
+/*medidas*/
+@mixin medidas ($ancho, $alto,){
+    width: $ancho;
+    height: $alto;
+}
+/*mixin sombra y radio del borde*/
+@mixin shadow ($radius, $eje, $color: secundario) {
+    border-radius: $radius;
+    box-shadow: $eje $eje ($eje*2)map-get($colores , $color),
+}
+/* tipografia, pero armé uno mas lindo abajo*/
+@mixin tipografia ($font-size, $font-family, $font-weight){
+    font-size: $font-size;
+    font-family: $font-family;
+    font-weight: $font-weight;
+}
+/*animaciones*/
+@mixin animate($name, $duration, $iteration-count){
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-iteration-count: $iteration-count;
+}
+
+@mixin boton($background-color, $text-color) {
+    @include flex(flex, center , center);
+    @include shadow (5px, 2px);
+    padding: 5px 0;
+    background-color: $background-color;
+    color: $text-color;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+// Mixin fuente Roboto
+@mixin font-roboto($weight: 400, $italic: false, $font-size, $line-height) {
+    $font-family: null;
+
+    @if $weight == 300 {
+    $font-family: $roboto-light;
+    
+    @if $italic {
+    $font-family: "#{$font-family} Italic";
+    }
+    } @else if $weight == 400 {
+    $font-family: $roboto-regular;
+    
+    @if $italic {
+    $font-family: "#{$font-family} Italic";
+    }
+    } @else if $weight == 500 {
+    $font-family: $roboto-medium;
+    
+    @if $italic {
+    $font-family: "#{$font-family} Italic";
+    }
+    } @else if $weight == 700 {
+    $font-family: $roboto-bold;
+    } @else if $weight == 900 {
+    $font-family: $roboto-black;
+    
+    @if $italic {
+    $font-family: "#{$font-family} Italic";
+    }
+}
+font-family: $font-family;
+font-weight: $weight;
+font-style: $italic ; italic : normal;
+font-size: $font-size;
+line-height: $line-height;
+}
+

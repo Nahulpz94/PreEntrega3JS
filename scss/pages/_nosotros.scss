@@ -1,0 +1,89 @@
+
+/*estilo nosotros*/ 
+
+.body-nosotros{
+    display: grid;
+    grid-template-areas:
+    "header"
+    "h1"
+    "main"
+    "section-fotos"
+    "section-videos"
+    "footer";
+    background-image: url(../imgs/nosotros/fondo-nosotrosss.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+        .contenedor-h1-nosotros{
+            grid-area: h1;
+            margin: 0 auto;
+            padding: 40px;
+            width: 90%;
+            color: map-get($colores , terciario);
+            background-color: map-get($colores , secundario);
+            text-align: center;
+            @include animate(fadeInUp, 1s, 1);
+        .nosotros-conocenos {
+            margin: 0 auto;
+            font-size: 60px;
+            @include animate(bounceIn, 3s, infinite);
+            .conocenos-span {
+                color: map-get($colores, detalles-naranja);
+            }
+        }
+    }
+    .nosotros-main { /*main nosotros*/
+        grid-area: main;
+        @include flex(flex, space-between, center);
+        @include medidas (90%, auto);
+        margin: 0 auto;
+        padding: 1rem 2rem;
+        background-color:map-get($colores , terciario);
+        .img-nosotros{
+            @include medidas (400px, 500px);
+            @include shadow (5px, 10px);
+        }
+        .nosotros-historia {
+            margin: 1rem 3rem;
+            @include font-roboto(700, false, 24px, 1.2);
+            text-align: center;
+            letter-spacing: 2px;
+            color:map-get($colores , secundario);
+            strong{
+                color: map-get($colores, detalles-naranja);
+            }
+        }
+        .img-2{
+            @include medidas (400px, 500px);
+            @include shadow (5px, 10px);
+            }
+        }
+    .section-fotos { /*seccion fotos*/
+        grid-area: section-fotos;
+        @include flex(flex, space-between, space-around);
+        margin: 0 auto;
+        padding: 3rem 2rem;
+        flex-wrap: wrap;
+        @include medidas (90%, unset);
+        background-color: map-get($colores , salmon-claro) ;
+        .img-nosotros{
+            @include medidas (400px, 500px);
+            @include shadow (5px, 10px);
+            margin: 1.2rem 0;
+        }
+    }
+    .section-videos { /*seccion videos*/
+        grid-area: section-videos;
+        @include flex(flex, space-around,center);
+        @include medidas (90%, 600px);
+        margin: 0 auto;
+        background-image: url(../imgs/nosotros/fondo-videosss.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        .video-nosotros { /*videos*/
+            @include medidas (30%, 450px);
+            @include shadow (2px, 5px);
+            border: 1px solid map-get($colores , secundario );
+        }
+    }
+}
+

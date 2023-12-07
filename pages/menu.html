@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Toda nuestra carta para que elijas las cosas más ricas!">
+    <meta name="keywords" content="Pizzeria, Jirafa, Quilmes, Novedades, Comidas, Pizzas, Hamburguesas, Empanadas, Bebidas">
+    <title>Menú</title>
+    <!--bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <!-- animated css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!--estilos-->
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+    <!--iconos-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body id="body-menu" class="body-menu">
+    <!-- inicio header-->
+    <header class="header" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark "> <!--nav-->
+            <div class="container">
+                <a class="navbar-brand" href="../index.html" aria-label="Ir al index"><img src="../imgs/logo-3.webp" id="logo" width="200" height="110" alt="Logo Jirafa"></a>
+                <button class="navbar-toggler border-2" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="sidebar offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header text-white border-bottom">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">La Jirafa Menú</h5>
+                        <button type="button" class="btn-close btn-close-black shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div id="nav" class="offcanvas-body flex-lg-row">
+                        <ul class="navbar-nav justify-content-start align-items-center fs-5 flex-grow-1 pe-3">
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="../index.html">Inicio</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" id="active" href="./menu.html">Menú</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link" href="./promos.html">Promos</a>
+                            </li>
+                            <li class="nav-item mx-2">
+                                <a class="nav-link " href="./contacto.html">Contacto</a>
+                            </li>
+                        </ul>
+                        <div class="gap-1" id="logo-redes">
+                            <a href="https://www.instagram.com/lajirafadequilmes" target="_blank"> <i class="fa-brands fa-instagram"></i></a></li>
+                            <a href="https://api.whatsapp.com/send/?phone=541172231010&text=%C2%A1Hola%21+Quiero+pizza+de+La+Jirafa&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></li>
+                            <a href="https://www.facebook.com/La-Jirafa-de-Quilmes-107216815347671" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                            <a href="https://twitter.com/LaJirafaQuilmes" target="_blank"><i class="fa-brands fa-twitter"></i></a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- cierre header-->
+            <!--seccion superior-->
+    <div id="contenedor-h1-menu" class="contenedor-h1-menu">
+        <h1 animate__animated animate__fadeInUp class="nuestro-menu" id="nuestro-menu"><span class="nuestro">NUESTRO</span> MENÚ</h1>
+    </div>
+    <main animate__animated animate__bounceInUp id="menu-section-top" class="menu-section-top">
+        <img class="img-menu" src="../imgs/menu/menu-1.webp" alt="página del menu pizzas" height="970px">
+        <img  class="img-menu" src="../imgs/menu/menu-2.webp" alt="página del menu pizzas" height="970px">
+        <img class="img-menu" src="../imgs/menu/menu-3.webp" alt="página del menu empanadas" height="970px">
+    </main>
+        <!--1ras card-->
+        <section class="card-container-grid">
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/papas-jirafa.webp"  height="200px" width="100px" class="card-img-top" alt="Papas fritas">
+                        <div class="card-body">
+                            <p class="card-text">Papas La Jirafa</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Papas Fritas<br>Salsa de Quesos<br>Panceta<br>Verdeo</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/rabas.webp"  height="200px" width="100px" class="card-img-top" alt="Rabas">
+                        <div class="card-body">
+                            <p class="card-text">Rabas</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Rabas<br>Ciboulette<br>Opcional:<br>A la Provenzal</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/tabla.webp"  height="200px" width="100px" class="card-img-top" alt="picada de frituras">
+                        <div class="card-body">
+                            <p class="card-text">Tabla La Jirafa</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p> Arrolladitos<br>Bastones de Muzzarella<br>Pollo Crispy<br>Canastitas<br>Empanaditas<br>Triángulitos de Fainá Especial</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/picada.webp"  height="200px" width="100px" class="card-img-top" alt="Picada Veggie">
+                        <div class="card-body">
+                            <p class="card-text">Tabla Veggie</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Dip de Berenjena<br>Buñuelos<br>Tequeños<br>Snacks de Calabaza<br>Brusqueta Veggie</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/pizza-11.webp"  height="200px" width="100px" class="card-img-top" alt="pizza de jamón y morrones">
+                        <div class="card-body">
+                            <p class="card-text">Jamón y Morrones</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p animate_animated animate__backInDown>Salsa de Tomate <br> Muzzarella<br>Champiñones<br>Morrón<br>Jamón<br>Aceitunas Negras<br>Huevo</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/pizza-5.webp"  height="200px" width="100px" class="card-img-top" alt=" pizza de panceta y huevo">
+                        <div class="card-body">
+                            <p class="card-text">Panceta y Huevo</p>
+                        </div>   
+                    </div>
+                        <div class="card-back">
+                        <p>Salsa de Tomate <br> Muzzarella<br>Panceta Frita<br>Huevo Frito<br>Aceitunas Negras</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/pizza-10.webp"  height="200px" width="100px" class="card-img-top" alt="pizza jamón y ananá">
+                        <div class="card-body">
+                            <p class="card-text">Brasilera</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Muzzarella<br>Jamón<br>Ananá<br>Cerezas</p>
+                    </div> 
+                </div>
+            </div>
+            
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/pizza-2.webp"  height="200px" width="100px" class="card-img-top" alt="pizza calabresa">
+                        <div class="card-body">
+                            <p class="card-text">Calabresa</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Salsa de Tomate<br>Muzzarella<br>Longaniza<br>Oregano<br>Aceitunas</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/burger.webp"  height="200px" width="100px" class="card-img-top" alt="hamburguesa">
+                        <div class="card-body">
+                            <p class="card-text">Cheeseburger</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Carne<br>Panceta<br>Huevo Frito<br>Queso Cheddar<br>Papas Fritas</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/mila.webp"  height="200px" width="100px" class="card-img-top" alt="Milanesa napolitana">
+                        <div class="card-body">
+                            <p class="card-text">Milanesa Americana</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Carne o Pollo<br>Cheddar<br>Panceta Picada<br>Tomate<br>Huevo Frito<br>Aceitunas<br>Papas Fritas</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/gratinado.webp"  height="200px" width="100px" class="card-img-top" alt="Pasta gratinada">
+                        <div class="card-body">
+                            <p class="card-text">Pasta Gratinada</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Pasta a Elección<br>Salsa a Elección<br>Gratinada al Horno</p>
+                    </div> 
+                </div>
+            </div>
+            <div class="card-container">
+                <div class="card-1" style="width: 20rem;">
+                    <div class="card-front">
+                        <img src="../imgs/menu/flan.webp"  height="200px" width="100px" class="card-img-top" alt="Flan Mixto">
+                        <div class="card-body">
+                            <p class="card-text">Flan Mixto</p>
+                        </div>   
+                    </div>
+                    <div class="card-back">
+                        <p>Flan Casero<br>Dulce de Leche<br>Crema</p>
+                    </div> 
+                </div>
+            </div>
+
+
+
+        </section>
+    <!--seccion inferior-->
+    <div class="menu-section-bottom" id="menu-section-bottom">
+        <img class="menu-img" id="menu-img" src="../imgs/menu/menu-4.webp" alt="imagen del menu tartas" height="970px">
+        <img class="menu-img" id="menu-img" src="../imgs/menu/menu-5.webp" alt="imagen del menu bebibas" height="970px">
+        <img class="menu-img" id="menu-img" src="../imgs/menu/menu-6.webp" alt="imagen del menu postres" height="970px">
+    </div>
+    <!--inicio footer-->
+    <footer class="footer" id="footer">
+        <div class="scroll-up-container">
+            <a href="#" class="scroll-up" aria-label="Ir arriba"><img class="img-scroll-up" src="../imgs/scroll-up.png" alt="ir arriba"/></a>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4"> <!--info contacto-->
+                    <div class="footer-info" id="footer-info">
+                        <i class="fa-sharp fa-solid fa-phone fa-2x1" id="footer-phone"></i>
+                        <h3>4782-1218</h3>
+                        <i class="fa-solid fa-envelope" id="footer-envelope"></i>
+                        <a href="mailto:pizzerialajirafa@gmail.com" aria-label="Envianos un correo"><h3>Correo</h3></a>
+                    </div>
+                </div>
+                <div class="col-md-4"> <!--footer hora-->
+                    <div class="footer-hora" id="footer-hora">
+                        <h3>Horarios</h3>
+                        <p>Martes a Domingos de 11:00hs a 00:00hs
+                        <br>Lunes Cerrado</p>
+                    </div>
+                </div>
+                <div class="col-md-4"> <!--footer ubicacion-->
+                    <div class="footer-ubicacion" id="footer-ubicacion">
+                        <h3>Ubicación</h3>
+                        <p>9 de Julio 410
+                        <br>Quilmes - Bs. As</p>
+                    </div>
+                </div>
+                <div class="col-md-12"> <!--footer redes-->
+                    <div class="footer-redes" id="footer-redes">
+                        <a href="https://www.instagram.com/lajirafadequilmes" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://api.whatsapp.com/send/?phone=541172231010&text=%C2%A1Hola%21+Quiero+pizza+de+La+Jirafa&type=phone_number&app_absent=0" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.facebook.com/La-Jirafa-de-Quilmes-107216815347671" target="_blank"><i class="fa-brands fa-facebook"></i></a>   
+                        <a href="https://twitter.com/LaJirafaQuilmes" target="_blank" ><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p class="copyright"> Copyright &#169; 2023 Nahuel F. López</p>  
+    </footer>  <!--cierre footer-->
+</body>
+</html>
