@@ -1207,7 +1207,7 @@ body .contenedor-login input:focus {
   border-radius: 5px;
   box-shadow: 4px 4px 8px #1C3334;
   transition: 1s ease;
-  color: #F5F5F5;
+  color: #1C3334;
 }
 body .contenedor-login input:focus::placeholder {
   font-size: 16px;
@@ -1217,7 +1217,7 @@ body .contenedor-login input:focus::placeholder {
   transition: 0.1s ease;
 }
 body .contenedor-login input:focus:hover {
-  color: #F5F5F5;
+  color: #1C3334;
   transform: scale(1.05);
 }
 body .contenedor-login .contenedor-boton-login {

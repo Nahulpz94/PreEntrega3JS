@@ -36,7 +36,7 @@ body {
                 text-align: center;
                 @include shadow (5px, 4px, secundario);
                 transition: 1s ease;
-                color: map-get($colores , terciario);
+                color: map-get($colores , secundario);
                 &::placeholder {
                     font-size: 16px;
                     text-align: center;
@@ -45,7 +45,7 @@ body {
                     transition: 0.1s ease;
                 }
                 &:hover {
-                    color: map-get($colores , terciario);
+                    color: map-get($colores , secundario);
                     transform: scale(1.05);
                 }
             }    
