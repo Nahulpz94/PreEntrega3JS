@@ -16,7 +16,7 @@ function saludarSiEsValido(nombre){
     const contenedorLogin = document.querySelector("#contenedor-login");
     contenedorLogin.innerHTML = `<h2>Bienvenido ${nombre}<h2>`;
 
-    //no se como hacer para ocultar el botón de inicio de sesión del index//
+    //no se como hacer para ocultar el botón de inicio de sesión del index, me volví loco //
     const botonIniciarSesion = document.querySelector("#boton-iniciar-sesion");
     if (botonIniciarSesion) {
         botonIniciarSesion.style.display = "none";
@@ -68,6 +68,6 @@ botonLogin.addEventListener("click", (e)=>{
         saludarSiEsValido(usuarioEncontrado.usuario);
 
     } else {
-        alert("Usuario no encontrado");
+        alert("Usuario no encontrado. Intenta nuevamente!");
     }
 });
