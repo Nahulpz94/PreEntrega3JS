@@ -21,7 +21,7 @@ body {
             margin: 10px;
             padding: 10px;
             border-radius: 5px;
-            border: 1.5px solid map-get($colores , secundario );
+            border: 1.5px solid map-get($colores , secundario);
             padding: 14px;
             font-size: 20px;
             text-align: center;
@@ -59,14 +59,14 @@ body {
                 margin: 20px;
                 @include medidas (170px, 40px);
                 @include tipografia(unset, 'Poppins', bolder);
-                letter-spacing: 2px;
                 text-align: center;
                 @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
-                @include shadow (5px, 1.5px, secundario);          
+                @include shadow (5px, 1.5px, salmon-claro);          
                 transition: 0.5s ease;
+                border: 1px;
                 &:hover {
                 @include shadow (5px, 4px, salmon-oscuro);
-                color: map-get($colores, terciario);  
+                color: map-get($colores, salmon-claro);  
                 background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
                 transform:scale(1.1);
                 }  

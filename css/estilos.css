@@ -1238,7 +1238,6 @@ body .contenedor-login .contenedor-boton-login .boton-log-in {
   font-size: unset;
   font-family: "Poppins";
   font-weight: bolder;
-  letter-spacing: 2px;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -1252,13 +1251,14 @@ body .contenedor-login .contenedor-boton-login .boton-log-in {
   font-weight: bold;
   transition: background-color 0.3s ease;
   border-radius: 5px;
-  box-shadow: 1.5px 1.5px 3px #1C3334;
+  box-shadow: 1.5px 1.5px 3px #FFD3B5;
   transition: 0.5s ease;
+  border: 1px;
 }
 body .contenedor-login .contenedor-boton-login .boton-log-in:hover {
   border-radius: 5px;
   box-shadow: 4px 4px 8px #F8B195;
-  color: #F5F5F5;
+  color: #FFD3B5;
   background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
   transform: scale(1.1);
 }
