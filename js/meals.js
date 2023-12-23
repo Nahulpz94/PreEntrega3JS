@@ -5,15 +5,15 @@ document.addEventListener('DOMContentLoaded', () => {
     fetch(`https://www.themealdb.com/api/json/v1/${apiKey}/search.php?s=`)
         .then(response => response.json())
         .then(data => {
-            // Manejar la respuesta de la API aquí
+            // manejar la respuesta de la API
             const mealList = document.getElementById('meal-list');
             
-            // Verificar si hay comidas
+            // verificar comidas
             if (data.meals) {
                 // filtro comidas que tienen información de imagen
                 const mealsWithImages = data.meals.filter(meal => meal.strMealThumb);
 
-                // revisar las comidas filtradas y agregarlas a la lista
+                // revisar comidas filtradas y agregarlas a la lista
                 mealsWithImages.forEach(meal => {
                     const listItem = document.createElement('li');
 
