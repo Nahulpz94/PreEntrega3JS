@@ -1,13 +1,37 @@
-console.log("HOLA");
+
 //base de datos//
 const BBDD = [
     {
-        usuario: "nahuel",
+        usuario: "Nahuel",
         contraseña: "123asd"
     },
     {
-        usuario: "martin",
-        contraseña: "456fgh"
+        usuario: "Martin",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Coco",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Delfina",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Patricia",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Leonardo",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Bruno",
+        contraseña: "123asd"
+    },
+    {
+        usuario: "Gian",
+        contraseña: "123asd"
     },
 ]
 
@@ -36,7 +60,7 @@ const esValido = JSON.parse(localStorage.getItem("user"))
 if(esValido){
     saludarSiEsValido(esValido.usuario);
 }
-//variables almacenadas//
+//variables guardadas//
 const inputUsuario = document.querySelector("#usuario")
 const inputPassword = document.querySelector("#password")
 const botonLogin = document.querySelector("#boton-login")

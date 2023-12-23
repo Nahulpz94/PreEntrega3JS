@@ -1,0 +1,53 @@
+#body-meals {
+    background-image: url(../imgs/menu/fondo-menu-3.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor-h1-meals {
+    padding: 42px;
+    background-color: map-get($colores , secundario);
+    #lista-comidas {
+        color: map-get($colores, terciario);
+        font-size: 3.5rem;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include animate(bounceIn, 3s, infinite);
+        .span-destacados{
+            margin-left: 1.2rem;
+            color: map-get($colores, detalles-naranja);
+        }
+    }
+}
+
+#meal-list {
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+        list-style: none;
+        color: white;
+        background-color: map-get($colores , salmon-claro);
+        margin: 1rem;
+        padding: 10px;
+        border-radius: 10px;
+        @include shadow(5px, 5px);
+    }
+    img {
+        width: 400px;
+        height: 400px;
+        border: 1px solid rgb(56, 54, 54);
+        @include shadow(5px, 5px);
+        margin: 0.6rem;
+    }
+    p {
+        font-size: 24px;
+        text-align: center;
+        margin: 5px;
+        padding: 5px;
+        color: map-get($colores, detalles-naranja);
+    }
+}

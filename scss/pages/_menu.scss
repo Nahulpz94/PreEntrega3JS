@@ -119,6 +119,22 @@
                 }
             }
         }
+        .boton {
+            margin: 20px;
+            position: relative;
+            left: 153%;
+            @include medidas (180px, unset);
+            letter-spacing: 2px;
+            @include boton (map-get($colores, detalles-naranja), map-get($colores, terciario));
+            @include shadow (5px, 2px, salmon-claro);          
+            transition: 0.5s ease;
+            &:hover {
+            @include shadow (5px, 4px, salmon-oscuro);
+            color: map-get($colores, salmon-claro);  
+            background-image: linear-gradient(to top, #e94825, #ed4521, #f1411c, #f53d16, #f93910);
+            transform:scale(1.1);
+        }
+    }
     }
     .menu-section-bottom {/*seccion baja*/
         grid-area: div;
